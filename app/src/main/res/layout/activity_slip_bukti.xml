@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SlipBukti">
+
+    <!-- HEADER BIRU -->
+    <View
+        android:id="@+id/headerLayout"
+        android:layout_width="413dp"
+        android:layout_height="454dp"
+        android:background="@drawable/bluebacground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/slipLayout"
+        android:layout_width="365dp"
+        android:layout_height="591dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/border_struk"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- LOGO DAN TEKS "CATATAN KEUANGAN" -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:contentDescription="Logo"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Catatan Keuangan"
+                android:textColor="#002B80"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/StrukText"
+            android:layout_gravity="center"
+            android:layout_marginTop="-5dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Pencatatan Berhasil Dilakukan"
+            android:textSize="14dp"
+            tools:ignore="TextSizeCheck" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="8dp"
+            android:background="#AAA" />
+
+        <!-- BAGIAN 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/StrukText"
+                android:layout_height="28dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Tanggal"
+                android:textSize="14dp"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/tanggal"
+                style="@style/StrukText"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="right"
+                android:text="April 22 2025"
+                android:textSize="14dp"
+                tools:ignore="TextSizeCheck" />
+        </LinearLayout>
+
+        <!-- bagian 2-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/StrukText"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Kategori"
+                android:textSize="14dp"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/kategori"
+                style="@style/StrukText"
+                android:layout_width="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="right"
+                android:text="k / l"
+                android:textSize="14dp"
+                tools:ignore="TextSizeCheck" />
+
+        </LinearLayout>
+
+        <!--bagian 3 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/StrukText"
+                android:layout_marginBottom="25dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Keterangan"
+                android:textSize="14dp"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/keterangan"
+                style="@style/StrukText"
+                android:layout_width="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="25dp"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="right"
+                android:text="label"
+                android:textSize="14dp"
+                tools:ignore="TextSizeCheck" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="8dp"
+            android:background="#AAA" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/StrukText"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Nominal"
+                android:textSize="14dp"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/nominal"
+                style="@style/StrukText"
+                android:layout_width="match_parent"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="right"
+                android:text="Nominal"
+                android:textSize="14dp"
+                tools:ignore="TextSizeCheck" />
+
+
+        </LinearLayout>
+
+
+        <!-- TOTAL -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/biayaAdmin"
+                style="@style/StrukText"
+                android:layout_marginBottom="25dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Biaya Admin"
+                android:textSize="14dp"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="right"
+                android:text="Rp 0,-"
+                android:textColor="#01086F"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="8dp"
+            android:background="#AAA" />
+
+        <!-- TOTAL -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Total"
+                android:textColor="#444"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Rp 25.000,00,-"
+                android:textColor="#01086F"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#063F87"
+        android:fontFamily="@font/poppins_bold"
+        android:text="ok"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        app:cornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slipLayout" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/activity_navigasi_bar"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
